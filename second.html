@@ -1,1 +1,43 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>方方的博客</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js"></script>
+  <link rel="stylesheet" href="./typo.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <style>
+  body{
+    padding: 16px;
+  }
+  img{
+    max-width: 100%;
+  }
+  </style>
+</head>
+<body>
+  <div id="content">
+# 我的第而篇博客
+
+**方方**
+
+__网上的名人名言都是我说的。 ——鲁迅__
+
+大家好，我今天见到鲁迅了。
+
+<img src="https://gss0.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/zhidao/wh%3D600%2C800/sign=a4b65a69f0deb48ffb3ca9d8c02f1611/d8f9d72a6059252d8d66dd0c379b033b5bb5b941.jpg">
+
+
+  </div>
+  
+  <script>
+    var content = document.getElementById('content')
+    var markdown = content.innerHTML
+    var html = marked(markdown)
+    content.innerHTML = html
+  </script>
+  
+
+</body>
+</html>
